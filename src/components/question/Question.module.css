@@ -14,11 +14,17 @@
 }
 
 .title .question {
-    flex: 0.8;
+    flex: 0.85;
 }
 
 .answer {
     color: var(--clr-grayish-purple);
     line-height: 1.25;
     font-size: var(--size-350);
+}
+
+@media screen and (min-width: 768px) {
+    .title .question {
+        flex: 1;
+    }
 }

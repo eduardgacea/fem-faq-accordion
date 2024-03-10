@@ -8,10 +8,12 @@ function Faq() {
     const width = useScreenWidth();
 
     return (
-        <div className={styles.container}>
-            <img src={`/public/background-pattern-${width < 768 ? "mobile" : "desktop"}.svg`} alt="header" />
+        <>
+            <div className={styles.container}>
+                <img src={`/public/background-pattern-${width < 420 ? "mobile" : "desktop"}.svg`} alt="header" />
+            </div>
             <Accordion />
-        </div>
+        </>
     );
 }
 

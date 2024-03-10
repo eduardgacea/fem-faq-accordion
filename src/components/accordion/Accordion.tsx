@@ -11,14 +11,14 @@ function Accordion() {
     return (
         <div className={styles.container}>
             <div className={styles.titleContainer}>
-                <img src="icon-star.svg" />
+                <img src="icon-star.svg" alt="star icon" />
                 <h1 className={styles.title}>FAQs</h1>
             </div>
-            <div className={styles.questions}>
+            <ul className={styles.questions}>
                 {questions.map(q => (
                     <Question key={q.id} q={q} activeQuestion={activeQuestion} setActiveQuestion={setActiveQuestion} />
                 ))}
-            </div>
+            </ul>
         </div>
     );
 }
