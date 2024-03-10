@@ -10,7 +10,7 @@ function Accordion() {
 
     return (
         <main className={styles.container} role="main">
-            <div className={styles.titleContainer} role="heading">
+            <div className={styles.titleContainer} role="heading" aria-level={1}>
                 <img src="icon-star.svg" alt="star icon" />
                 <h1 className={styles.title}>FAQs</h1>
             </div>
