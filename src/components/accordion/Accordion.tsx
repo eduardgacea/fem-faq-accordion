@@ -9,7 +9,7 @@ function Accordion() {
     const [activeQuestion, setActiveQuestion] = useState<number | undefined>(1);
 
     return (
-        <main className={styles.container} role="main">
+        <main className={styles.container}>
             <div className={styles.titleContainer} role="heading" aria-level={1}>
                 <img src="icon-star.svg" alt="star icon" />
                 <h1 className={styles.title}>FAQs</h1>

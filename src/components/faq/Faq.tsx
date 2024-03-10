@@ -9,7 +9,7 @@ function Faq() {
 
     return (
         <>
-            <header className={styles.container} role="banner">
+            <header className={styles.container}>
                 <img src={`background-pattern-${width < 420 ? "mobile" : "desktop"}.svg`} alt="header" />
             </header>
             <Accordion />
