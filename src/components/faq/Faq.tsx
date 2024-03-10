@@ -9,9 +9,9 @@ function Faq() {
 
     return (
         <>
-            <div className={styles.container}>
+            <header className={styles.container} role="banner">
                 <img src={`background-pattern-${width < 420 ? "mobile" : "desktop"}.svg`} alt="header" />
-            </div>
+            </header>
             <Accordion />
         </>
     );

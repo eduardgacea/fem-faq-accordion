@@ -6,11 +6,11 @@ import Question from "../question/Question";
 import styles from "./Accordion.module.css";
 
 function Accordion() {
-    const [activeQuestion, setActiveQuestion] = useState<number | undefined>();
+    const [activeQuestion, setActiveQuestion] = useState<number | undefined>(1);
 
     return (
-        <div className={styles.container}>
-            <div className={styles.titleContainer}>
+        <main className={styles.container} role="main">
+            <div className={styles.titleContainer} role="heading">
                 <img src="icon-star.svg" alt="star icon" />
                 <h1 className={styles.title}>FAQs</h1>
             </div>
@@ -19,7 +19,7 @@ function Accordion() {
                     <Question key={q.id} q={q} activeQuestion={activeQuestion} setActiveQuestion={setActiveQuestion} />
                 ))}
             </ul>
-        </div>
+        </main>
     );
 }
 
