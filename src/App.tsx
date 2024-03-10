@@ -1,5 +1,7 @@
+import Faq from "./components/faq/Faq";
+
 function App() {
-    return <div>App</div>;
+    return <Faq />;
 }
 
 export default App;

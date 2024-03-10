@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-400);
+    width: 90%;
+    background-color: var(--clr-white);
+    margin: auto;
+    transform: translateY(-60px);
+    border-radius: var(--size-200);
+    padding: var(--size-400);
+}
+
+.titleContainer {
+    display: flex;
+    gap: var(--size-400);
+}
+
+.titleContainer > img {
+    width: 24px;
+}
+
+.titleContainer .title {
+    color: var(--clr-dark-purple);
+    font-weight: var(--fw-bold);
+    font-size: var(--size-600);
+}
+
+.questions {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-400);
+}

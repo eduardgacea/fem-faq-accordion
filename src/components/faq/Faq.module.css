@@ -1,0 +1,23 @@
+.container {
+    margin: auto;
+    max-width: 375px;
+}
+
+.container > img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+.faq {
+    max-width: 320px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -90px);
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px;
+    }
+}
