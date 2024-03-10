@@ -10,7 +10,7 @@ function Faq() {
     return (
         <>
             <div className={styles.container}>
-                <img src={`/public/background-pattern-${width < 420 ? "mobile" : "desktop"}.svg`} alt="header" />
+                <img src={`background-pattern-${width < 420 ? "mobile" : "desktop"}.svg`} alt="header" />
             </div>
             <Accordion />
         </>
